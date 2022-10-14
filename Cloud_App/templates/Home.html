@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title> Home </title>
+        <link href="/static/Styling.css" rel="stylesheet" type="text/css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+</head>
+
+    
+<body>
+<div class="hero-image">
+        
+
+	<section class="w3-container w3-content w3-center" style="max-width:600px">
+    <!-- Navigation -->
+        <nav class="w3-bar w3-black">
+          <a href="Home.html" class="w3-button w3-bar-item">Home</a>
+          <a href="Result.html" class="w3-button w3-bar-item">Result</a>
+          <a href="Audit.html" class="w3-button w3-bar-item">Audit</a>
+          <a href="About.html" class="w3-button w3-bar-item">About Me</a>
+        </nav>
+    </section>
+    
+   
+    <div class="box">
+    <section class="w3-container w3-content w3-center" style="max-width:600px" >
+      <div  >
+        <h2>Welcome To Value At Risk Simulation</h2>
+        <p> An application that supports determining the risks of using certain trading signals for a trading strategy <br>using a so-called Monte Carlo method. </p>
+        </div>
+    </section>
+    </div>
+    
+ 
+    <div class="box">
+    <section class="w3-container w3-content w3-center" style="max-width:600px">
+       <form method="post" action="/Home">
+			<h2>Please, enter the five main parameters for the analysis</h2>
+				<div class="row">
+				  <div class="col-25">
+				    <label for="Serveice Name">Serveice Name (S) :</label>
+				  </div>
+				  <div class="col-75">
+				    <select name="st" id="S">
+				          <option value="Lambda">Lambda</option>
+				          <option value="EC2">EC2</option>
+				          <option value="EMR">EMR</option>
+				          <option value="MapReduce">MapReduce</option>
+				    </select>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="col-25">
+				    <label for="num_of_R">Number of Resources (R) :</label>
+				  </div>
+				  <div class="col-75">
+				    <input type="text" id="R" name="nor" min="1" max="10000" placeholder="Number of Resources" required>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="col-25">
+				    <label for="Num of Resources">Lenght of Price History (H) : </label>
+				  </div>
+				  <div class="col-75">
+				    <input type="number" id="H" name="loph" min="1" max="3650" placeholder="Length of Price History" required>
+				  </div>
+				</div> 
+				<div class="row">
+				  <div class="col-25">
+				    <label for="Num of shots">Number of Shots (D) :</label>
+				  </div>
+				  <div class="col-75">
+				    <input type="number" id="D" name="nos" min="1" max="10000000" placeholder="Number of Shots" required>
+				  </div>
+				</div> 
+				 <div class="row">
+				  <div class="col-25">
+				    <label for="Serveice Name">Trading Signals (T) :</label>
+				  </div>
+				  <div class="col-75">
+				    <select name="ts" id="T" required>
+				          <option value="buy">Buy</option>
+				          <option value="sell">Sell</option>
+				    </select>
+				  </div>
+				</div>  
+				<div class="row">
+				  <input type="submit" name="Start" value="Start Simulation" align="center">
+				  <input type="submit" name="Terminate" value="Terminate Resources" align="center">
+				  
+				</div>
+              </form>  
+    </section>
+    </div>
+   
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+          
+          <p class="w3-medium">
+            Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css </a>
+          </p>
+    </footer>
+    
+    </div>
+</body>
+
+</html>
+
